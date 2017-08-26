@@ -6,5 +6,5 @@ WORKDIR /go/src/app
 
 VOLUME ["/export"]
 EXPOSE 9000
-ENTRYPOINT ["go-wrapper", "run"]
+ENTRYPOINT ["/usr/bin/docker-entrypoint.sh"]
 CMD ["server", "/export"]
